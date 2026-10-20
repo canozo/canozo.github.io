@@ -1,1 +1,21 @@
 @import 'tailwindcss';
+
+@theme {
+    --color-background: #25201f;
+    --color-foreground: #fdf9e8;
+    --color-foreground-muted: #bcb8ac;
+    --color-foreground-subtle: #9c978e;
+    --color-primary: #1bb426;
+
+    --font-mono:
+        'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        'Liberation Mono', monospace;
+    --default-font-family: var(--font-mono);
+}
+
+@layer base {
+    ::selection {
+        background-color: var(--color-primary);
+        color: var(--color-background);
+    }
+}

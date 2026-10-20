@@ -31,6 +31,22 @@ pnpm dlx live-server
 Tailwind's source file is `src/input.css`; the compiled output goes to
 `dist/output.css`. The build output is generated on demand and is not committed.
 
+## Theme
+
+Colors and typography are defined as Tailwind theme variables in
+`src/input.css`:
+
+| Token                       | Value     |
+| --------------------------- | --------- |
+| `--color-background`        | `#25201F` |
+| `--color-primary`           | `#1BB426` |
+| `--color-foreground`        | `#FDF9E8` |
+| `--color-foreground-muted`  | `#BCB8AC` |
+| `--color-foreground-subtle` | `#9C978E` |
+
+The site uses JetBrains Mono through Google Fonts. To change fonts, update
+`--font-mono` in `src/input.css` and the Google Fonts link in `index.html`.
+
 ## Deployment
 
 Pushes to `main` are built and deployed to GitHub Pages by
