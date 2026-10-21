@@ -38,7 +38,8 @@ Colors and typography are defined as Tailwind theme variables in
 
 | Token                       | Value     |
 | --------------------------- | --------- |
-| `--color-background`        | `#25201F` |
+| `--color-background` (old)  | `#25201F` |
+| `--color-background`        | `#141312` |
 | `--color-primary`           | `#1BB426` |
 | `--color-foreground`        | `#FDF9E8` |
 | `--color-foreground-muted`  | `#BCB8AC` |
