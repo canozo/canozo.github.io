@@ -375,7 +375,7 @@
                 <div
                     class="flex flex-col gap-3 border-t border-foreground/10 py-8 text-xs text-foreground-subtle sm:flex-row sm:items-center sm:justify-between"
                 >
-                    <p>© 2026 Javier Cano</p>
+                    <p>© <span id="copyright-year">2026</span> Javier Cano</p>
 
                     <ul class="flex items-center gap-5">
                         <li>
@@ -415,5 +415,8 @@
             }
         </script>
         <script type="module" src="paul-allens-card.js"></script>
+        <script>
+            document.getElementById("copyright-year").textContent = new Date().getFullYear();
+        </script>
     </body>
 </html>
